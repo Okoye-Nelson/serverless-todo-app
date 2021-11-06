@@ -340,6 +340,7 @@ resources:
         RestApiId:
           Ref: "ApiGatewayRestApi"
 
+
     TodosDynamoDBTable:
       Type: AWS::DynamoDB::Table
       Properties:
@@ -364,6 +365,7 @@ resources:
                 KeyType: RANGE
             Projection:
               ProjectionType: ALL
+
 
     AttachmentsBucket:
       Type: AWS::S3::Bucket
